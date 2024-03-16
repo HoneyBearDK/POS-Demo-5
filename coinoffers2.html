@@ -5,12 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>coinoffers 2</title>
 <style>
-.custom-horizontal-line {
-    border-top: 2px solid black;
-    position: absolute;
-    top: 3%; /* Juster den vertikale placering efter behov */
-    left: 9%; /* Juster den horisontale placering efter behov */
-    transform: translate(-94%, -50%);
+#customText {
+        position: absolute; /* Positionér relativt til det nærmeste forældreelement med en position, der ikke er statisk */
+        top: 480px; /* Ændre disse værdier for at justere placeringen */
+        left: 50px;
+        background-color:none;
+        padding: 10px;
+		color: #727272 ;
+        border: 0px solid #ccc;
+        border-radius: 5px;
+		 font-family: Arial, sans-serif; /* Ændrer fonten til Arial */
+        font-weight: bold; /* Gør teksten fed */
+        z-index: 9999; /* Sæt en højere z-indeksering for at sikre, at teksten vises foran andre elementer */
+    }
+
+
 
 }
 
@@ -77,7 +86,10 @@ td, th {
 </style>
 </head>
 <body>
-
+<div id="customText">
+    <h2></h2>
+    <p>McBjørn© 2024</p>
+</div>
 <!-- Container til at indeholde firkanten og tabellen -->
 <div class="container">
     <!-- Opretter firkanten ved hjælp af <div> elementet -->
@@ -306,7 +318,12 @@ td, th {
         if (cell.contains(document.querySelector('img[src="img/cheeseburgerco.png"]'))) {
             popupText.innerHTML += "Cheeseburger 15kr<br>";
         
-       
+       }
+		if (cell.contains(document.querySelector('img[src="img/nuggets.png"]'))) {
+            popupText.innerHTML += "18 Nuggets 73kr<br>";
+			}
+		if (cell.contains(document.querySelector('img[src="img/tops.png"]'))) {
+            popupText.innerHTML += "6 tops 23kr<br>";
      
       
         }
