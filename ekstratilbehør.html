@@ -15,7 +15,7 @@
     <meta property="og:type" content="website">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>tilbehør 2</title>
+<title>ekstra tilbehør</title>
 <style>
 #customText {
         position: absolute; /* Positionér relativt til det nærmeste forældreelement med en position, der ikke er statisk */
@@ -109,29 +109,29 @@ td, th {
 
     <table>
 	<tr>
-<td onclick="showText(this)"> <img src="img/bbq.png" height="50" width="50" </td>
-<td onclick="showText(this)"> <img src="img/sursød.png" height="50" width="50" </td>
-<td onclick="showText(this)"> <img src="img/karry.png" height="50" width="50" </td>
-<td onclick="showText(this)"> <img src="img/sennep.png" height="50" width="50" </td>
+<td onclick="showText(this)"> <img src="img/salt.png" height="50" width="50" </td>
+<td onclick="showText(this)"> <img src="img/1dkk.png" height="50" width="50" </td>
+<td  </td>
+<td  </td>
 <td></td>
 <td></td>
 <td></td>
-<td onclick="showText(this)"> <img src="img/ketchup.png" height="50" width="50" </td>
-<td onclick="showText(this)"> <img src="img/pfsauce.png" height="52" width="50" </td>
-<td> <a href="index 2.html"> <img src="img/close.png" height="50" width="50" </td>
+<td </td>
+<td </td>
+<td> <a href="index 2.html"> <img src="img/close.png" height="50" width="50" </td> </td> </a>
 </tr>
 
 <tr>
-<td onclick="showText(this)"> <img src="img/mayodip.png" height="50" width="50" </td>
-<td onclick="showText(this)"> <img src="img/chedderdip.png" height="50" width="52" </td>
-<td onclick="showText(this)"> <img src="img/chillimayodip.png" height="50" width="50" </td>
-<td onclick="showText(this)"> <img src="img/garlicdip.png" height="50" width="50" </td>
-<td onclick="showText(this)"> <img src="img/bearnaisedip.png" height="50" width="50" </td>
+<td </td>
+<td </td>
+<td  </td>
+<td  </td>
+<td  </td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-          <td> <a href="ekstratilbehør.html"> <img src="img/tilbehør2.png" height="50" width="50"> </a> </td>
+<td> </td>
 </tr>
         <tr>
           <td> <img src="img/0.png" height="52" width="52"> </td>
@@ -378,9 +378,15 @@ td, th {
         if (cell.contains(document.querySelector('img[src="img/takeouttotal.png"]'))) {
             popupText.innerHTML += "***END OF SALE***<br>";
         }
+		 if (cell.contains(document.querySelector('img[src="img/salt.png"]'))) {
+            popupText.innerHTML += "Salt 0.00kr<br>";
+        }
+		 if (cell.contains(document.querySelector('img[src="img/1dkk.png"]'))) {
+            popupText.innerHTML += "Ekstra 1dkk<br>";
+        }
         popupText.style.display = "block";
         popupText.style.left = "15px";
-        popupText.style.top = "-596px";
+        popupText.style.top = "-550px";
     }
 </script>
 
